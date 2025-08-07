@@ -1,183 +1,159 @@
-# Glanzwerk Rheinland - Professional Invoice System
+# Glanzwerk Rheinland - Rechnungssystem
 
-🚗 **Grün gedacht, sauber gemacht**
+Ein intelligentes Rechnungssystem für die Autowäscherei Glanzwerk Rheinland in Neuwied, Deutschland.
 
-A professional invoice generation system for Glanzwerk Rheinland car wash services, built with Streamlit.
+## 🚗 Über das Projekt
 
-## Features
+Das Glanzwerk Rechnungssystem ist eine benutzerfreundliche Webanwendung, die speziell für die Autowäscherei Glanzwerk Rheinland entwickelt wurde. Das System automatisiert die Rechnungserstellung und generiert professionelle PDF-Rechnungen mit integriertem Stammkundenrabatt-System.
 
-### 🎯 Core Functionality
-- **Professional Invoice Generation**: Create detailed invoices with company branding
-- **15 Service Types**: Complete range of car wash and detailing services
-- **Multi-language Support**: German interface with Arabic subtitle support
-- **PDF Export**: Generate professional PDF invoices for download
+## ✨ Hauptfunktionen
 
-### 💰 Advanced Pricing & Discounts
-- **Regular Customer Discount**: 10% automatic discount for loyal customers
-- **Discount Codes**: Pre-configured codes (NEUKUNDE, STAMMKUNDE, WINTER2025, SOMMER2025)
-- **Manual Discount**: Flexible percentage-based discounts
-- **Additional Services**: Custom services with flexible pricing
+- **Deutsche Benutzeroberfläche** - Vollständig lokalisiert
+- **Automatische Steuerberechnung** - MwSt 19% wird automatisch berechnet
+- **Stammkundenrabatt** - 10% automatischer Rabatt nach 5 Besuchen
+- **PDF-Rechnungsgenerierung** - Sofortiger Download professioneller Rechnungen
+- **Glanzwerk-Branding** - Rechnungsdesign entspricht der Unternehmensidentität
+- **Kundendatenbank** - Automatische Verfolgung der Kundenbesuche
 
-### 📋 Service Catalog
-1. **Außenreinigung per Hand** - 50€
-2. **Felgenreinigung & Flugrostentfernung** - 30€
-3. **Innenraumreinigung** - 70€
-4. **Lederreinigung & -pflege** - 60€
-5. **Lederreparatur** - 100€
-6. **Polster- & Teppichreinigung** - 80€
-7. **Scheibenreinigung innen & außen** - 20€
-8. **Lackpolitur & Glanzversiegelung** - 150€
-9. **Nano-Keramik-Versiegelung** - 300€
-10. **Motorraumreinigung** - 40€
-11. **Geruchsneutralisierung & Ozonbehandlung** - 50€
-12. **Tierhaarentfernung** - 40€
-13. **Hagelschaden- und Dellenentfernung** - 200€
-14. **Auto Folierung** - 500€
-15. **Abhol- und Bringservice** - 25€
+## 🛠️ Technologie-Stack
 
-## 🚀 Quick Start
+- **Frontend:** Streamlit
+- **Backend:** Python 3.11
+- **Datenbank:** SQLite
+- **PDF-Generierung:** fpdf2
+- **Hosting:** Streamlit Cloud
 
-### Local Development
+## 🏢 Serviceangebot
+
+1. **Grundreinigung** - 50,00€ (netto)
+2. **Intensivreinigung** - 80,00€ (netto)
+3. **Premium-Wäsche** - 120,00€ (netto)
+
+## 📋 Installation und Verwendung
+
+### Lokale Installation
+
+1. Repository klonen:
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/glanzwerk-invoice-system.git
-cd glanzwerk-invoice-system
+git clone https://github.com/[username]/glanzwerk-rechnungssystem.git
+cd glanzwerk-rechnungssystem
+```
 
-# Install dependencies
+2. Abhängigkeiten installieren:
+```bash
 pip install -r requirements.txt
+```
 
-# Run the application
+3. Anwendung starten:
+```bash
 streamlit run app.py
 ```
 
-### Streamlit Cloud Deployment
-1. Fork this repository to your GitHub account
-2. Go to [Streamlit Cloud](https://streamlit.io/cloud)
-3. Connect your GitHub account
-4. Deploy from your forked repository
-5. Set the main file path to `app.py`
+### Online-Version
 
-## 📱 Usage
+Die Anwendung ist live verfügbar unter: [Streamlit Cloud Link wird hier eingefügt]
 
-### Creating an Invoice
-1. **Enter Customer Information**
-   - Customer name
-   - Vehicle registration number
+## 🏪 Unternehmensinformationen
 
-2. **Select Main Service**
-   - Choose from 15 available services
-   - View service description and pricing
+**Glanzwerk Rheinland**  
+Krasnaer Str. 1  
+56566 Neuwied  
+Deutschland  
 
-3. **Add Additional Services** (Optional)
-   - Format: "Description: Price"
-   - Example: "Special Cleaning: 25€"
+**Kontakt:**  
+📞 Telefon: +49 171 1858241  
+📧 E-Mail: Glanzwerk.Rheinland@gmail.com  
+🌐 Website: glanzwerk-rheinland.de  
 
-4. **Apply Discounts** (Optional)
-   - Check "Regular Customer" for 10% discount
-   - Enter discount code for additional savings
-   - Add manual discount percentage
+**Slogan:** "Grün gedacht, sauber gemacht"
 
-5. **Generate Invoice**
-   - Click "Calculate Invoice" to preview
-   - Download PDF for professional presentation
+## 📖 Benutzerhandbuch
 
-### Discount Codes
-- **NEUKUNDE**: 15% discount for new customers
-- **STAMMKUNDE**: 10% discount for regular customers
-- **WINTER2025**: 20% seasonal discount
-- **SOMMER2025**: 12% seasonal discount
+### Rechnung erstellen
 
-## 🏢 Company Information
+1. **Kundendaten eingeben**
+   - Kundenname in das entsprechende Feld eingeben
+   - Fahrzeugnummer/Kennzeichen eingeben
 
-**Glanzwerk Rheinland**
-- **Address**: Krasnaer Str. 1, 56566 Neuwied, Deutschland
-- **Phone**: +49 171 1858241
-- **Email**: Glanzwerk.Rheinland@gmail.com
-- **Instagram**: @glanzwerk_rheinland
-- **Motto**: "Grün gedacht, sauber gemacht"
+2. **Dienstleistung auswählen**
+   - Aus dem Dropdown-Menü die gewünschte Dienstleistung wählen
 
-### Banking Details
-- **Bank**: Sparkasse Neuwied
-- **IBAN**: DE89 5745 0120 0000 1234 56
-- **BIC**: MALADE51NWD
+3. **Rechnung generieren**
+   - Auf "Rechnung generieren" klicken
+   - System berechnet automatisch alle Beträge
+   - Rechnungsvorschau wird angezeigt
 
-## 🛠 Technical Details
+4. **PDF herunterladen**
+   - Auf "PDF-Rechnung herunterladen" klicken
+   - PDF wird automatisch generiert und heruntergeladen
 
-### Built With
-- **Streamlit**: Web application framework
-- **FPDF2**: PDF generation library
-- **Pandas**: Data manipulation and analysis
-- **Pillow**: Image processing
+### Stammkundenrabatt
 
-### File Structure
-```
-glanzwerk-invoice-system/
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-└── assets/               # Static assets (logos, images)
+- Das System verfolgt automatisch Kundenbesuche
+- Nach dem 5. Besuch wird automatisch 10% Rabatt gewährt
+- Rabatt wird deutlich in der Rechnung hervorgehoben
+
+## 🔧 Technische Details
+
+### Datenbankschema
+
+```sql
+-- Kundentabelle
+CREATE TABLE customers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL UNIQUE
+);
+
+-- Besuchstabelle
+CREATE TABLE visits (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    customer_id INTEGER NOT NULL,
+    visit_date TEXT NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
+);
 ```
 
-### Key Features Implementation
-- **Responsive Design**: Mobile-friendly interface
-- **Real-time Calculation**: Instant price updates
-- **Professional PDF**: Company-branded invoices
-- **Error Handling**: Input validation and user feedback
-- **Multi-discount Support**: Stackable discount system
+### Preisberechnung
 
-## 📄 Invoice Features
+- **Nettobetrag:** Basispreis der gewählten Dienstleistung
+- **MwSt (19%):** Automatisch berechnet
+- **Bruttobetrag:** Netto + MwSt
+- **Stammkundenrabatt:** 10% Rabatt nach 5 Besuchen
+- **Endbetrag:** Brutto - Rabatt (falls anwendbar)
 
-### PDF Invoice Includes
-- Company logo and branding
-- Invoice number and dates
-- Customer and vehicle information
-- Detailed service breakdown
-- Tax calculations (19% MwSt.)
-- Applied discounts
-- Payment terms and banking details
-- Professional footer with contact information
+## 🚀 Deployment
 
-### Automatic Calculations
-- Net prices for all services
-- 19% VAT (MwSt.) calculation
-- Multiple discount application
-- Final total with all adjustments
+### Streamlit Cloud
 
-## 🔧 Customization
+1. Repository auf GitHub hochladen
+2. Mit Streamlit Cloud verbinden
+3. App bereitstellen
 
-### Adding New Services
-Edit the `services` dictionary in `app.py`:
-```python
-services = {
-    'new_service': {
-        'name': 'New Service Name',
-        'price': 100,
-        'description': 'Service description'
-    }
-}
+### Lokales Deployment
+
+```bash
+streamlit run app.py --server.port 8501
 ```
 
-### Adding Discount Codes
-Edit the `discount_codes` dictionary:
-```python
-discount_codes = {
-    'NEWCODE': 25,  # 25% discount
-}
-```
+## 📝 Lizenz
 
-## 📞 Support
+Dieses Projekt wurde speziell für Glanzwerk Rheinland entwickelt.
 
-For technical support or business inquiries:
-- **Email**: Glanzwerk.Rheinland@gmail.com
-- **Phone**: +49 171 1858241
+## 👨‍💻 Entwickler
 
-## 📜 License
+**Mazen Design**  
+Spezialisiert auf Webanwendungen für kleine und mittelständische Unternehmen.
 
-This project is proprietary software developed for Glanzwerk Rheinland.
+## 🔮 Zukünftige Erweiterungen
+
+- E-Mail-Integration für automatischen Rechnungsversand
+- WhatsApp-API für Rechnungsversand
+- Erweiterte Kundenverwaltung
+- Rechnungshistorie und Archiv
+- Umsatz- und Kundenstatistiken
+- Multi-Standort-Unterstützung
 
 ---
 
-**© 2025 Glanzwerk Rheinland - Professional Car Wash Services**
-
-*Grün gedacht, sauber gemacht* 🌱✨
+*Entwickelt mit ❤️ für Glanzwerk Rheinland*
 
